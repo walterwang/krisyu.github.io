@@ -7,7 +7,7 @@
     <atom:link href="http://krisyu.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Linkedlist V1_简单操作</title>
+        <title>Linkedlist V1_c++</title>
         
         
           <description>&lt;p&gt;linkedlist_v1 file @ &lt;a href=&quot;https://github.com/KrisYu/DataStructure&quot;&gt;https://github.com/KrisYu/DataStructure&lt;/a&gt;&lt;/p&gt;
@@ -16,8 +16,8 @@
 </description>
         
         <pubDate>Fri, 04 Sep 2015 00:00:00 -0500</pubDate>
-        <link>http://krisyu.github.io/2015/LinkedList-v1_%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</link>
-        <guid isPermaLink="true">http://krisyu.github.io/2015/LinkedList-v1_%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</guid>
+        <link>http://krisyu.github.io/2015/LinkedList-v1_C++/</link>
+        <guid isPermaLink="true">http://krisyu.github.io/2015/LinkedList-v1_C++/</guid>
       </item>
     
   </channel>
