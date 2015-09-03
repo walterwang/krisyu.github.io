@@ -1,330 +1,50 @@
-<!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<style>
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    color: #737373;
-    background-color: white;
-    margin: 10px 13px 10px 13px;
-}
-table {
-	margin: 10px 0 15px 0;
-	border-collapse: collapse;
-}
-td,th {	
-	border: 1px solid #ddd;
-	padding: 3px 10px;
-}
-th {
-	padding: 5px 10px;	
-}
-
-a {
-    color: #0069d6;
-}
-a:hover {
-    color: #0050a3;
-    text-decoration: none;
-}
-a img {
-    border: none;
-}
-p {
-    margin-bottom: 9px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #404040;
-    line-height: 36px;
-}
-h1 {
-    margin-bottom: 18px;
-    font-size: 30px;
-}
-h2 {
-    font-size: 24px;
-}
-h3 {
-    font-size: 18px;
-}
-h4 {
-    font-size: 16px;
-}
-h5 {
-    font-size: 14px;
-}
-h6 {
-    font-size: 13px;
-}
-hr {
-    margin: 0 0 19px;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-}
-blockquote {
-    padding: 13px 13px 21px 15px;
-    margin-bottom: 18px;
-    font-family:georgia,serif;
-    font-style: italic;
-}
-blockquote:before {
-    content:"\201C";
-    font-size:40px;
-    margin-left:-10px;
-    font-family:georgia,serif;
-    color:#eee;
-}
-blockquote p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    margin-bottom: 0;
-    font-style: italic;
-}
-code, pre {
-    font-family: Monaco, Andale Mono, Courier New, monospace;
-}
-code {
-    background-color: #fee9cc;
-    color: rgba(0, 0, 0, 0.75);
-    padding: 1px 3px;
-    font-size: 12px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-pre {
-    display: block;
-    padding: 14px;
-    margin: 0 0 18px;
-    line-height: 16px;
-    font-size: 11px;
-    border: 1px solid #d9d9d9;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-pre code {
-    background-color: #fff;
-    color:#737373;
-    font-size: 11px;
-    padding: 0;
-}
-sup {
-    font-size: 0.83em;
-    vertical-align: super;
-    line-height: 0;
-}
-* {
-	-webkit-print-color-adjust: exact;
-}
-@media screen and (min-width: 914px) {
-    body {
-        width: 854px;
-        margin:10px auto;
-    }
-}
-@media print {
-	body,code,pre code,h1,h2,h3,h4,h5,h6 {
-		color: black;
-	}
-	table, pre {
-		page-break-inside: avoid;
-	}
-}
-</style>
-<title>NEW BLOG - A lot things to be updated, place a note here first</title>
-
+<title> Xue Yu's Notes</title>
 </head>
+
 <body>
-<h1>NEW BLOG - A lot things to be updated, place a note here first</h1>
+<p style="margin-left: 80px;">&nbsp;</p>
 
-<h2>再写LinkedList</h2>
+<pre style="font-family: 'Droid Sans Mono', 'Lucida Console', 'Andale Mono', 'Courier New', Courier, monospace; font-size: 12px; line-height: 12px; color: rgb(0, 0, 0); margin-left: 80px;">
+               |\
+        /    /\/o\_
+       (.-.__.(   __o
+    /\_(      .----&#39;
+     .&#39; \____/
+    /   /  / \
+___:____\__\__\_________Welcome_________</pre>
 
-<p>为嘛是再写，其实关于Data Structure，我觉得自己真心已经疼爱过他们一次了，奈何学艺不精，所以一直想找机会再仔细看一次，这样既然再次有了疼爱他们的机会，那么也就认真的再爱一次。</p>
+<p style="margin-left: 80px;">&nbsp;</p>
 
-<h2>C++ 与 C</h2>
+<p style="margin-left: 80px;"><strong>Here is main for Data Structure notes:</strong></p>
 
-<p>C到C++，感觉像折翼的天使。好吧，其实问题的关键是在于不要流程化思维和硬想要的OOP思维。</p>
+<p style="margin-left: 80px;"><a href="notes/linkedlist_v1.html">linkedlist_v1</a></p>
 
-<p>另外，C++的野心太大：
-<code>template模板/通用编程</code> 以及 <code>语法糖</code> 还有 <code>编译重载</code>有的时候让C++读起来显得吓人，晦涩难懂，特别是对于初学者。
-还是不能一口吃掉一个大饼，还是先写类似C的C++，再来写像C++的C++.</p>
+<p style="margin-left: 80px;">&nbsp;</p>
 
-<h2>Mac上编译C++11</h2>
+<p style="margin-left: 80px;">I just created this website to record some of notes, obvious this needs a lot of work to be done ....</p>
 
-<pre><code>$ clang++ -std=c++11 -stdlib=libc++ t.cpp
-</code></pre>
+<p style="margin-left: 80px;">But just leave it here now, and let me finish my homework first, lol.....</p>
 
-<p>不谢</p>
+<p style="margin-left: 80px;">&nbsp;</p>
 
-<h2>LinkedList_v1 (C style C++？)</h2>
+<p style="margin-left: 80px;">My name is Xue Yu, now I am studing in Computer Science in Dallas, US.</p>
 
-<h3>struct node</h3>
+<p style="margin-left: 80px;">if you find my name hard to read, you can call me Kris.</p>
 
-<pre><code>struct node{
-  int data;
-  node* next;
-}
-</code></pre>
+<p style="margin-left: 80px;">&nbsp;</p>
 
-<h3>insert node/val  at head</h3>
+<p style="margin-left: 80px;">I&#39;m from China and I am a young girl&nbsp;&nbsp;: )</p>
 
-<p>值得注意的是： 如果要在头上插入node，这里传入的时<code>node *&amp;head</code>
-所谓的pass by reference，如果写C的话，那么估计应该写 <code>node **head</code>
-```
-// pass head by reference, since the head will be changed
-void insertFront(node <em>&amp;head, int n){
-    node </em>tmp = new node;
-    tmp->data = n;
-    tmp->next = NULL;</p>
+<p style="margin-left: 80px;">&nbsp;</p>
 
-<pre><code>if (head == NULL) {
-    head = tmp;
-} else {
-    tmp-&gt;next = head;
-    head = tmp;
-}
-</code></pre>
+<p style="margin-left: 80px;">&nbsp;</p>
 
-<p>}
-```</p>
+<p style="margin-left: 80px;">&nbsp;</p>
 
-<h3>traverse 遍历的方法千千万</h3>
+<p>&nbsp;</p>
 
-<p>这里其实不引入curr变量应该也ok，因为传入的是node* head，把head这个pointer按值传入</p>
-
-<pre><code>void traverse(node* head){
-    for (node* curr = head; curr != NULL; curr = curr-&gt;next)
-        cout &lt;&lt; curr-&gt;data &lt;&lt; " ";
-    cout &lt;&lt; endl;
-}
-</code></pre>
-
-<p>跟for循环异曲同工
-<code>
-void traverse2(node* head){
-    while (head) {
-        cout &lt;&lt; head-&gt;data &lt;&lt;" ";
-        head = head-&gt;next;
-    }
-    cout &lt;&lt; endl;
-}
-</code></p>
-
-<p>用递归来traverse
-<code>
-void traverseRec(node* head){
-    if (head == NULL) return;
-    cout &lt;&lt; head-&gt;data &lt;&lt; " ";
-    traverseRec(head-&gt;next);
-}
-</code></p>
-
-<h3>来寻找一个值/node</h3>
-
-<pre><code>bool findVal(node *head, int val){
-    if (head == NULL) return false;
-    if (head-&gt;data == val) return true;
-    return findVal(head-&gt;next,val);
-}
-</code></pre>
-
-<p>还可以返回值的地址
-我调皮的打印发现NULL的地址是0x0;
-<code>
-node* find(node *head, int val){
-    if (head == NULL) return NULL;
-    if (head-&gt;data == val) return head;
-    return find(head-&gt;next,val);
-}
-</code></p>
-
-<h3>deleteNode或许可以优化</h3>
-
-<pre><code>
-void deleteNode(node *&amp;head, int n){
-    //if not found, just return;
-    if (!findVal(head,n)) return;
-
-    node* prev = NULL;
-    node* curr = head;
-    // the delete node is at head
-    if (head-&gt;data == n){
-        head = head-&gt;next;
-        delete curr;
-    } else {
-        while (curr-&gt;data != n) {
-            prev = curr;
-            curr = curr-&gt;next;
-        }
-        prev-&gt;next = curr-&gt;next;
-        delete curr;
-    }
-}
-</code></pre>
-
-<p>没有在这个上面花second thought，挑了一个方便走的方向就赶着走了出来，或许这个是可以优化的</p>
-
-<h3>reserveList才是真神作</h3>
-
-<pre><code>void reverseList(node *&amp;head){
-    node* prev = NULL;
-    node* curr = head;
-    node* next = NULL;
-
-    while (curr != NULL) {
-        next = curr-&gt;next;
-        curr-&gt;next = prev;
-        prev = curr;
-        curr = next;
-    }
-    head = prev;
-}
-</code></pre>
-
-<pre><code>void reverseListRec(node* &amp;head){
-    node* first;
-    node* rest;
-
-    if (head == NULL) return;
-
-    first = head;
-    rest = first-&gt;next;
-
-    if (rest == NULL) return;
-
-    reverseListRec(rest);
-
-    first-&gt;next-&gt;next = first;
-
-    first-&gt;next = NULL;
-    head = rest;
-
-}
-</code></pre>
-
-<p>无论是recursive还是loop类型的reverse linked list都让我感觉是真神作算法啊~</p>
-
-<p>P.S. 太懒了，暂时就把代码折让扔着，然后等待更简洁，更可爱，更迷人，更可人的linkelist_v2吧（假装就是这样）</p>
 </body>
 </html>
