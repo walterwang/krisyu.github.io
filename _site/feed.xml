@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Xue Yu&#39;s notes</title>
+    <description>Some Notes Here</description>
+    <link>http://krisyu.github.io</link>
+    <atom:link href="http://krisyu.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Linkedlist V1_简单操作</title>
+        
+        
+          <description>&lt;p&gt;linkedlist_v1 file @ &lt;a href=&quot;https://github.com/KrisYu/DataStructure&quot;&gt;https://github.com/KrisYu/DataStructure&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://krisyu.github.io&quot;&gt;返回主页&lt;/a&gt;&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 04 Sep 2015 00:00:00 -0500</pubDate>
+        <link>http://krisyu.github.io/2015/LinkedList-v1_%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</link>
+        <guid isPermaLink="true">http://krisyu.github.io/2015/LinkedList-v1_%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</guid>
+      </item>
+    
+  </channel>
+</rss>

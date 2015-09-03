@@ -1,7 +1,9 @@
  
-# NEW BLOG - A lot things to be updated, place a note here first
+##
  
+ linkedlist_v1 file @ <https://github.com/KrisYu/DataStructure>
  
+ [返回主页](http://krisyu.github.io )
 
 再写LinkedList
 ----------
@@ -181,3 +183,4 @@ void reverseListRec(node* &head){
 无论是recursive还是loop类型的reverse linked list都让我感觉是真神作算法啊~
 
 P.S. 太懒了，暂时就把代码折让扔着，然后等待更简洁，更可爱，更迷人，更可人的linkelist_v2吧（假装就是这样）
+
