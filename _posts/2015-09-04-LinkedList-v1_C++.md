@@ -13,11 +13,16 @@ struct node{
 }
 ```
 
+
 ###insert node/val  at head###
-值得注意的是： 如果要在头上插入node，这里传入的时```node *&head```
-所谓的pass by reference，如果写C的话，那么估计应该写 ```node **head```
+值得注意的是： 如果要在头上插入node，这里传入的是node *&head
+
+所谓的pass by reference，如果写C的话，那么估计应该写 node **head
+
+//pass head by reference, since the head will be changed
+
+
 ```
-// pass head by reference, since the head will be changed
 void insertFront(node *&head, int n){
     node *tmp = new node;
     tmp->data = n;
@@ -34,7 +39,9 @@ void insertFront(node *&head, int n){
 
 ###traverse 遍历的方法千千万###
 
+
 这里其实不引入curr变量应该也ok，因为传入的是node* head，把head这个pointer按值传入
+
 
 ```
 void traverse(node* head){
@@ -45,6 +52,7 @@ void traverse(node* head){
 ```
 
 跟for循环异曲同工
+
 ```
 void traverse2(node* head){
     while (head) {
@@ -56,6 +64,8 @@ void traverse2(node* head){
 ```
 
 用递归来traverse
+
+
 ```
 void traverseRec(node* head){
     if (head == NULL) return;
@@ -65,6 +75,7 @@ void traverseRec(node* head){
 ```
 
 ###来寻找一个值/node###
+
 
 ```
 bool findVal(node *head, int val){
@@ -76,6 +87,7 @@ bool findVal(node *head, int val){
 
 还可以返回值的地址
 我调皮的打印发现NULL的地址是0x0;
+
 ```
 node* find(node *head, int val){
     if (head == NULL) return NULL;
@@ -86,8 +98,9 @@ node* find(node *head, int val){
 
 ###deleteNode或许可以优化###
 
-```
 
+
+```
 void deleteNode(node *&head, int n){
     //if not found, just return;
     if (!findVal(head,n)) return;
@@ -109,9 +122,32 @@ void deleteNode(node *&head, int n){
 }
 ```
 
-没有在这个上面花second thought，挑了一个方便走的方向就赶着走了出来，或许这个是可以优化的
+来试试Recursion版本？
+
+感觉貌似没错？
+
+```
+void deleteNodeRec(node *&head, int n){
+    if (!findVal(head,n)) return;
+    
+    node* prev = NULL;
+    node* curr = head;
+    // the delete node is at head
+    if (head->data == n){
+        head = head->next;
+        delete curr;
+    } else {
+        deleteNodeRec(curr->next,n);
+    }
+}
+
+```
+
+
+
 
 ###reserveList才是真神作###
+
 
 ```
 void reverseList(node *&head){
@@ -153,8 +189,12 @@ void reverseListRec(node* &head){
 }
 
 ```
-
 无论是recursive还是loop类型的reverse linked list都让我感觉是真神作算法啊~
 
-P.S. 太懒了，暂时就把代码折让扔着，然后等待更简洁，更可爱，更迷人，更可人的linkelist_v2吧（假装就是这样）
+等待进一步肢解....
+
+
+###LinkedList自带递归特性###
+
+是么？
 

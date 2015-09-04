@@ -47,24 +47,23 @@
 </code></pre></div>
 <h3>insert node/val  at head</h3>
 
-<p>值得注意的是： 如果要在头上插入node，这里传入的时<code>node *&amp;head</code>
-所谓的pass by reference，如果写C的话，那么估计应该写 <code>node **head</code>
-```
-// pass head by reference, since the head will be changed
+<p>值得注意的是： 如果要在头上插入node，这里传入的时<code>node *&amp;head</code></p>
+
+<p>所谓的pass by reference，如果写C的话，那么估计应该写 node **head</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">// pass head by reference, since the head will be changed
 void insertFront(node *&amp;head, int n){
     node *tmp = new node;
     tmp-&gt;data = n;
-    tmp-&gt;next = NULL;</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">if (head == NULL) {
-    head = tmp;
-} else {
-    tmp-&gt;next = head;
-    head = tmp;
+    tmp-&gt;next = NULL;
+
+    if (head == NULL) {
+        head = tmp;
+    } else {
+        tmp-&gt;next = head;
+        head = tmp;
+    }
 }
 </code></pre></div>
-<p>}
-```</p>
-
 <h3>traverse 遍历的方法千千万</h3>
 
 <p>这里其实不引入curr变量应该也ok，因为传入的是node* head，把head这个pointer按值传入</p>
