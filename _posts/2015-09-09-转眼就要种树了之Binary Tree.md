@@ -1,4 +1,4 @@
-#我的最爱之一Binary Tree，定义 + Traverse
+#转眼就要种树了之Binary Tree
 
 
 ###定义
@@ -69,7 +69,7 @@ struct binaryTreeNode{
 
 ###Traverse###
 
-因为Binary Tree（貌似翻的二叉树吧）本身的定义就很递归，所以无数的递归算法可以涌现在我的眼前，但是就先看Traverse吧：
+因为Binary Tree（翻译二叉树吧？）本身的定义就很递归，所以无数的递归算法可以涌现在我的眼前，但是就先看Traverse吧：
 
 
 ```
@@ -84,18 +84,20 @@ struct binaryTreeNode{
 看这颗树：
 
 
-PreOrder:
+####PreOrder:
 node -> left -> right
 
+打印： ABDC
 
 
 ```
-void InOrder(node *root)
+void PreOrder(node *root)
 {
-  if(root == NULL) return ;
-  print(root);
-  InOrder(root->left);
-  InOrder(root->right);
+  if(root ！= NULL){
+	  print(root);
+	  PreOrder(root->left);
+	  PreOrder(root->right);
+  }
 }
 
 ```
@@ -103,16 +105,22 @@ void InOrder(node *root)
 
 
 
-Inorder：
+
+
+####Inorder：
+
 left -> node -> right
 
+打印： BDAC
 
 ```
 void InOrder(node *root)
 {
-  if(root == NULL) return ;
-  
- 
+  if(root ！= NULL){
+	  InOrder(root->left);
+	  print(root);	  
+	  InOrder(root->right);
+  }
 }
 
 
@@ -120,11 +128,25 @@ void InOrder(node *root)
 
 
 
-
-
-
-PostOrder:
+####PostOrder:
 left -> right -> node
+
+打印： DBCA
+
+```
+
+void PostOrder(node *root)
+{
+  if(root ！= NULL){
+	  PostOrder(root->left);  
+	  PostOrder(root->right);
+	  print(root);	
+  }
+}
+
+```
+
+
 
 
 
