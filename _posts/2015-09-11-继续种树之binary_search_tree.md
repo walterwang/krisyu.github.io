@@ -1,12 +1,5 @@
 #继续种树之Binary Search Tree
 
-
-###File 
-
-实现 @ ⍒
-
-<https://github.com/KrisYu/DataStructure/tree/master/BinarySearchTree>
-
 ###定义
 
 在Binary Tree上加限制
@@ -289,6 +282,12 @@ node* findMax(node* root){
 
 
 
+###Bouns
 
+就把文件写出来吧
+
+实现 @ ⍒
+
+<https://github.com/KrisYu/DataStructure/tree/master/BinarySearchTree>
 
 
