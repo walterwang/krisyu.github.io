@@ -155,6 +155,32 @@ return 1 + treeHeight(root->left) > treeHeight(root->right) ? treeHeight(root->l
  棒棒的
  
  
+####找同胞
+
+最终再赠送一个找兄弟算法
+
+
+
+``` 
+
+node* sibling(node *root, int key){
+  if (root == NULL || root->data == key ) return NULL;
+  if (root->left && root->left->key == data)  return root->right;
+  if (root->right && root->right->key == data) return root->left;
+  node* tmp = sibling(root->left,key);
+  if( tmp == NULL ) return sibling(root->right,key);
+  else return tmp;
+} 
+
+``` 
+
+这里最棒的是引入tmp，然后检查，如果tmp为NULL，就继续找右边树
+
+这里是由许多boundary check，并且没有的话return NULL，所以这个算法也还是很可爱的
+ 
+ 
+ 
+ 
 
 
 
