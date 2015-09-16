@@ -1,6 +1,8 @@
 #继续种树之Binary Search Tree
 
 
+(File)<https://github.com/KrisYu/DataStructure/tree/master/BinarySearchTree>
+
 ###定义
 
 在Binary Tree上加限制
