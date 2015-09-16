@@ -1,4 +1,4 @@
-#继续种树BinaryTree
+#继续种树Binary Tree
 
 
 ###BFS vs DFS
