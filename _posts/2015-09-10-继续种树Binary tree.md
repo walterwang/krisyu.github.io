@@ -32,7 +32,7 @@ end while
  
  
  
- | size       | int                                |
+| size       | int                                |
 |------------|------------------------------------|
 | empty      | true/false                         |
 | push(item) | insert a copy of the item          |
