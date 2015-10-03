@@ -149,7 +149,7 @@ Deletion algorithm:     If a node underflows, rotate the appropriate key from t
 	  3   7    9       /  \   \    \             1  4 5   8  12 13 
 ```
 
-所以最终 shrink down one level 如c所示，感觉我自己来做deletion的话，还是很容易出错。
+所以最终 shrink down one level 如c所示，不过感觉deletion还是很容易出错。
 
 
 
