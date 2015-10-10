@@ -66,6 +66,8 @@ If N objects are placed into k boxes, then there is at least one box containing 
 不过这个generalized version 的 proof我表示稍迷茫，因为在我看来contradiction否定说明的问题并不完全是这个问题，所以 question mark here，此处存疑。
 
 
+pigeonhole principles也真是用起来有趣的，比如三个boston人头发的数量一定一样多之类的游戏。
+
 
 
 
