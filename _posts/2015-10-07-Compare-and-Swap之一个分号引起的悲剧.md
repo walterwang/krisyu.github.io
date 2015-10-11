@@ -1,8 +1,8 @@
-#一个分号引起的悲剧
+#Compare And Swap之一个分号引起的悲剧
 
 ###Compare And Swap
 
-看伪码，大呼，看不懂，这个是如何做到lock别的processes/threads的？
+看Compare And Swap的伪码，大呼，看不懂，这个是如何做到lock别的processes/threads的？
 
 
 ```
@@ -63,11 +63,4 @@ void main()
 ```
 
 - P(1) 离开 critical section, 此时bolt被重置为0，下一个process/thread有机会进入，同样的也会让别的无法进入，这样就保证了mutal exclusion
-
-
-
-优劣不再赘述
-
-
-###Semaphore
 
