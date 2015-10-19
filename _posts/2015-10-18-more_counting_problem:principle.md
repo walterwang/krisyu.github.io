@@ -84,7 +84,7 @@ These come from combination
 		 //那就此处存疑，参见wikipedia
 	```
 
-### Back to counting
+### Back to counting with repetition
 
 
 - r-Permutation with repetition  : n<sup>r</sup> √
@@ -96,7 +96,49 @@ These come from combination
 	
 	W | W W |W W
 	
+	2 bar 来 divide 5 wines
+	
+	C(2+5,2) = C(2+5,5)
+	
+	所以一般化就是 C(n+r-1.r) ,亦是 C(n+r-1,n-1)
+	
 	```
+	
+	这里还有的启发就是，比如在看无穷集合的时候，我们就用了1-to-1的状况来看另一个集合是否countable，同样，数数也是一样的，有时候一种数法不方便，我们可以换成另一种数法，或者，把一个问题映射成另一个方便数的问题。 比如这种 x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> = 11 ,这种求非负值解组合个数也可以看成是三种酒，一共取11瓶出来。
+	
+	
+### Indistinguishable Objects and Distribute problem
+
+- Permutation with indistinguishable objects  n!/(n<sub>1</sub>!n<sub>2</sub>!...n<sub>k</sub>!)
+
+	permutation of n objects,
+	n<sub>1</sub> indistingguishable objects of type 1,
+	n<sub>2</sub> of type 2....
+	
+	```
+	C(n,n1)C(n−n1,n2)···C(n−n1 −···−nk−1,nk)  i.e. the answer
+	```
+	
+- Distinguishable objects and distinguishable boxes  n!/(n<sub>1</sub>!n<sub>2</sub>!...n<sub>k</sub>!)
+	
+	
+	distribute n distinguishable objects so that n<sub>i</sub> objects are placed into box i ...
+	
+- Indistinguishable objects and distinguishable boxes  
+
+
+	```
+ 	n objects, k boxes 
+ 	C(k+n-1,n)  
+	the same as divide wines
+	```	
+	
+- Distinguishable objects and indistinguishable boxes   	**no simple closed form**
+- Indistinguishable objects and indistinguishable boxes 
+ 	**no simple closed form**
+
+	
+	
 
 
 
