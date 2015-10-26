@@ -17,12 +17,14 @@
 - Pigeonhole Principle 
 - Generalized Pigeonhole Principle  
    
-   ``` 
+   
+```
    not total get，的确很多elegant application，而关键点还是在于找pigeons和找holes
    
    利用Pigeonhole和数学家的大脑还可以继续推Ramsey theory，看party goers的认识状况（超过留个就晕☁️）
    
-    ```
+```
+
 - Permutations : r- permutation P(n,r) = n!/(n-r)!
 	
 	```
