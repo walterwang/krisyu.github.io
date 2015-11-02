@@ -2,13 +2,14 @@
 
 ###UIView
 
-Use UIView as a container，这里想放rate star，因为这个是其实某种程度上算和别的无关的，并且其有其自己的控制方法，所以这里添加了一个UIView.
+首先这里与之前不同的地方是我们自行添加了一个UIView - rate star，这个rate star自成一体，有自己的control和view，它的view居住在Main.Storyboard之内，但是它的control则是自己的swift文件。
+
+首先我们做的是创建了一个iOS的Cocoa Touch Class，然后让它变成UIView的subclass，给之命名为RatingControl,其实也就是创建了一个RatingControl.swift文件，我们将会用这个文件来初始化，和控制最终实现评分机制....
 
 
 >You typically create a view in one of two ways: by initializing the view with a frame so that you can manually add the view to your UI, or by allowing the view to be loaded by the storyboard. There’s a corresponding initializer for each approach: init(frame:) for the frame and init?(coder:) for the storyboard.
 
-
-这里用的是 init?(coder:)方法，因为这里最重是要和storyboard联起来。
+这里用的是 init?(coder:)方法，因为这里是要和storyboard联起来。
 
 ```
 required init?(coder aDecoder: NSCoder) {
@@ -17,7 +18,7 @@ required init?(coder aDecoder: NSCoder) {
 
 ```
 
-添加UIView之后，然后再跟这个control（.swift file）联系起来.
+然后添加UIView之后，然后再跟这个control（.swift file）联系起来.
 //Intrinsic Size（intrinsicContentSize）出现了好多次，目前存疑
 
 
@@ -31,7 +32,7 @@ required init?(coder aDecoder: NSCoder) {
 }
 ```
 
-这里使用代码来添加了一个UIButton 常量，因为let。
+这里使用代码来添加了一个UIButton 常量.
 
 
 ###分号悲剧
@@ -49,11 +50,11 @@ button.addTarget(self, action: "ratingButtonTapped:", forControlEvents: .TouchDo
 ```
 var ratingButtons = [UIButton]()
 
-
-
 ```
 
-然后用for in把之前的let button等括起来，就可以创建一组了，但是创建一组之后需要再使用layoutSubviews来分散分布buttons
+然后用for in把之前的let button等括起来，就可以创建一组了，注意创建一组之后需要再使用layoutSubviews来分散分布buttons
+
+
 
 
 ### Button Action
