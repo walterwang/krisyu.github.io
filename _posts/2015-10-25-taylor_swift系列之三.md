@@ -7,6 +7,9 @@ AutoLayout之方便感人，用肯定是要用的。所以AutoLayout的constrain
 
 //calculator的auto layout依旧出错
 
+然后在AutoLayout的combination里面，最有用的则是stack view，感觉就是群组.
+
+>In combination with Auto Layout, one of the most useful tools for working with layouts like the one you have is stack view (UIStackView). A stack view provides a streamlined interface for laying out a collection of views in either a column or a row. Stack views let you leverage the power of Auto Layout, creating user interfaces that can dynamically adapt to the device’s orientation, screen size, and any changes in the available space.
 
 
 ###Outlet and Action
