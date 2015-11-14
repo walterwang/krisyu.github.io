@@ -1,4 +1,4 @@
-#有向图 Strong Connectivity 和 Transitive Closure
+#Strong Connectivity和Transitive Closure
 
 ### Strong Connectivity
 
