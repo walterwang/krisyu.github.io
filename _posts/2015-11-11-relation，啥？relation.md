@@ -18,8 +18,7 @@
 - 最终，你的世界观就是通过对一系列的概念的理解形成的，你的行为其实就是使用这些概念的结果……
 
 
-需要pin在脑中：
-a divides b means b/a equal zero.
+
 
 ###基本概念
 
@@ -93,3 +92,6 @@ void TopSort(){
 }
 ```
 这个算法其实也算intuitive，因为minimal element总是在最低那块，入度为0那个，总是出度嘛...所以小于别的。
+
+最后，需要pin在脑中：
+a divides b means b/a equal zero.
