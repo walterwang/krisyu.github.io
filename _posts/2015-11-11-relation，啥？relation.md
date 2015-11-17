@@ -57,41 +57,6 @@ R<sup>*</sup> = R ∪ R<sup>2</sup> ∪ ... ∪ R <sup>n</sup>
 那么比如对于那种 R<sup>n</sup> ⊆ R 的relation 其transitive closure就是R，简直了，都不用计算，而这种情况说明的问题则是这个graph其连通性直接看其本身就可以了，比如R中有（a,b），那么a是直接可到b的，而无（a,c），那么a，c之间一定无路径.
 
 
-### Topological Sort
-
- 
-看discrete math课上的伪码：
- 
-```
-procedure topological sort
-k := 1
-while S ≠ ∅
-begin 
-	ak := a minimal element of S
-	S := S -{ak}
-	k := k + 1
-end {a1, a2,...., an is a compatible total ordering of S}
-
-```
-其实是很直觉的做法。
-
-然后来看一看data structure课上可能出现的对应伪码：
-
-```
-void TopSort(){
-	for( cnt = 0 ; cnt < |V| ; cnt++){
-		V = 未输出的入度为0的顶点
-		if (这样的V不存在){
-			Error("图中有回路");
-			break;
-		}
-		输出V，或者记录V的输出序号;
-		for (V 的每个邻接点W)
-			Indegree[W]--;
-    }
-}
-```
-这个算法其实也算intuitive，因为minimal element总是在最低那块，入度为0那个，总是出度嘛...所以小于别的。
 
 最后，需要pin在脑中：
 a divides b means b/a equal zero.
