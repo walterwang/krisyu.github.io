@@ -1,5 +1,5 @@
  
- linkedlist_v1 file @ <https://github.com/KrisYu/DataStructure>
+ linkedlist_v1 file @<https://github.com/KrisYu/DataStructure/tree/master/LinkedList> 已OOP重写
  
 
 LinkedList_v1 (C style C++？)

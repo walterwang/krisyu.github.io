@@ -31,14 +31,12 @@ end while
  但是需要注意的是stl里面的queue的操作
  
  
- 
-| size       | int                                |
-|------------|------------------------------------|
-| empty      | true/false                         |
-| push(item) | insert a copy of the item          |
-| back       | return back value, but not remove  |
-| front      | return front value, but not remove |
-| pop        | remove the next element            |
+- empty      : true/false                         
+- push(item) : insert a copy of the item          
+- back       : return back value, but not remove  
+- front      :  return front value, but not remove 
+- pop        : remove the next element            
+
 
 
 
@@ -47,6 +45,7 @@ q.front() 加上 q.pop() 才构成了 dequeue操作
 
  
  
+ 突然意识到这里BFS根本不用传入root，sigh|||
  
  ```
  ...
