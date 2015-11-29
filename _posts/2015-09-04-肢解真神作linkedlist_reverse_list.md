@@ -128,53 +128,42 @@ void reverseListRec(node* &head){
 
 ```
 
-前面都很容易理解，两个特殊的base case，linkedlist为空或者就只有一个node，那么就相当于直接return，点来了，同样看上面的node 1,2,3,4的例子：
+前面都很容易理解，两个特殊的base case，linkedlist为空或者就只有一个node，那么就相当于直接return，点来了，看一个简单例子：
 
+```
+head → [1 | ] → [2 | null ]
+
+```
+看一下步骤，这里的点还包括，head只是一个nodePtr，是指针：
 
 
 ```
-
 first = head;
 rest = node(1);
 
-然后rest ≠ null
-
+rest ≠ null
 reverseListRec(node(1));
 
 这一步会创造一个stack，继续进入
-	reverseListRec(node(2))
-	first = node(2);
-	rest = node(3);
+	reverseListRec(node(1))
+	first = node(1);
+	rest = node(2);
 	
 	继续进入
-	  reverseListRec(node(3)）
-	  first = node(3);
-	  rest = node(4);
-	  
-	  继续进入：
-	    reverseListRec(node(4));
-	    这一个stack里面：
-	    rest = = null
-	    return;
-	      
-	  回到上一个node(3)的stack里面：
-	      这个stack里的变量看清：
-	      first = node(3);
-	      first->next = node(4);
-	      node（4）->next = first;
-	      所以这一句first->next->next = first;
-	      成功的让node(4)指向了node(3)
-	      node(3)->next = NULL;
-	      然后head成功的指向node(4)
-	      
-	      .....
-	      
+	  reverseListRec(node(2)）
+	  first = node(2);
+	  rest = null;
 	
-不断的stack返回，最终我们我们返回到第一个stack，完美！
-	
-	      
+	回到上一个stack：
+	  这个stack里面，first = node(1)
+	  first->next node(2)的next指回node(1),list被反转
+	  同时node(1)指向null
+	  然后head = rest，头指针成功被改变
 
 ```
+
+当我尝试用更长的linkedlist时候就头晕了，看不那么懂之前的笔记，然后还假装写下了这些:
+
 
 关键点
 
