@@ -6,6 +6,10 @@
 
 动脑一想，其实可以用一个trick的做法，就是每次DFS检查一下逆向的edge是否存在，这样就可以完毕的检查了。或者生成一个对称的逆向的图。
 
+如果单纯的用DFS查每一个顶点的连通性，那么其时间复杂度将是O(V(V+E))，又会有O(n<sup>3</sup>)
+但是如果直接检查逆向是否存在或者生成逆向图的话，时间复杂度又可以回到O(V+E)，就是DFS本身的时间复杂度.
+
+
 
 ###Transitive Closure
 
@@ -13,8 +17,7 @@ transitive closure正好和最近的离散数学联起来，connectivity relatio
 
 R<sup>*</sup> = R ∪ R<sup>2</sup> ∪ ... ∪ R <sup>n</sup>
 
-所以有我们的Floyd-Warshall’s Algorithm，同样，属于不难想到和理解的算法，但是需要注意的是，求并集，每次都要在新的图（that is， 新加的边上操作）.
-
+所以有我们的Floyd-Warshall’s Algorithm，同样，属于不难想到和理解的算法，但是需要注意的是，求并集，每次都要在新的图（that is， 新加的边上操作），Dynamic Programming
 
 ```
 k -> middle node
