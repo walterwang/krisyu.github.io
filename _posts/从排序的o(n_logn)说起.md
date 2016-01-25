@@ -1,4 +1,7 @@
-#从排序的O(n logn)说起
+#知其所以然
+
+最近看了刘未鹏的几篇关于算法的文章，深有感触。
+
 
 ###基于比较的排序
 
@@ -26,4 +29,8 @@ ary tree is full and balanced, then h = ⌈log<sub>m</sub>l⌉.
 
 答案是 ⌈log<sub>3</sub>8⌉ = 2
 
-这个问题的解法关键是第一步就要想到，不能对半来称，类似decision tree，如果想降低树的高度，因为树的高度决定了time complexity，
+这个问题的解法关键是第一步就要想到，不能对半来称，类似decision tree，如果想降低树的高度，因为树的高度决定了time complexity，把树尽量的摊开就能减少树的高度。所以第一次的称法一定不是对半称。
+
+感觉上是这种问题都可以generalized化.
+
+
