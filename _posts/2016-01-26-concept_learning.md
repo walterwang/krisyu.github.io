@@ -19,7 +19,7 @@
 
 More general than： 
 
-Given hypotheses h<sub>j</sub> and h<sub>k</sub>,hj is more-general-thanm-- equaldo h<sub>k</sub> if and only if any instance that satisfies h<sub>k</sub> also satisfies h<sub>j</sub>.
+Given hypotheses h<sub>j</sub> and h<sub>k</sub>,h<sub>j</sub> is more-general-thanm-- equaldo h<sub>k</sub> if and only if any instance that satisfies h<sub>k</sub> also satisfies h<sub>j</sub>.
 
 ```
 1. Initialize h to the most specific hypothesis in H
@@ -33,6 +33,7 @@ Given hypotheses h<sub>j</sub> and h<sub>k</sub>,hj is more-general-thanm-- equa
 然后值得注意的是，这里只用看positive training instance.
 
 除去讲到的几个问题以外，有思考之处包括:是否可以有 Find-G Algorithm，这是从general到specific，可以从specific到general么，如果很多都是instacne都是negative的话，那么在这样的情况下find-s和find-g是mathmatics相等么...
+
 
 
 
@@ -71,6 +72,7 @@ For each training example d, do
 
 [id]:http://stackoverflow.com/questions/22625765/candidate-elimination-algorithm
 
+然后candidate-eliminat algorithm的好处是，最终给了version space，相当于给了解空间，不像find-s找到的是最specific的那一个，实际上可能有更general的满足。
 
 ###  implement尝试
 
@@ -78,13 +80,20 @@ For each training example d, do
 
 然后google了一下，有人尝试implement的，所以模仿了一下，findS好理解，然后implement也不难.
 
-<https://github.com/KrisYu/PythonScripts/blob/master/finds.py>
-
 因为是像我这样处理数据不太要脸的implement的|||
 
 首先只用处理positive的状况，然后总是用next more general来处理.
 
 #####elmination candidate
 
-toberead and digest
+implement的关键是理解：
+
+ - consistent : consistent是一方为？或者两个相等才能算consistent
+ - 从specific 到 general的顺序为 : ∅ → a specific word → ?
+ - positive 和 negative 都要处理边界问题，同时要写出正确的more general 和 more specific函数
+
+#####real life：
+这两个算法因为其对noise的忍受太弱，无法处理，所以基本没有实际使用，但是连introductory的算法都读起来觉得不容易，也是啧啧啧了（Python学太差）.
+ 
+ 
 
