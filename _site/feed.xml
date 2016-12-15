@@ -1,34 +1,438 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-    <title>Xue Yu&#39;s notes</title>
-    <description>Some Notes Here</description>
-    <link>http://krisyu.github.io</link>
-    <atom:link href="http://krisyu.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    
-      <item>
-        <title>预备开始，首先吐槽</title>
-        
-        
-          <description>&lt;h1&gt;预备开始 - 先吐槽一下&lt;/h1&gt;
-</description>
-        
-        <pubDate>Fri, 04 Sep 2015 00:00:00 -0500</pubDate>
-        <link>http://krisyu.github.io/2015/%E9%A2%84%E5%A4%87%E5%BC%80%E5%A7%8B%EF%BC%8C%E9%A6%96%E5%85%88%E5%90%90%E6%A7%BD/</link>
-        <guid isPermaLink="true">http://krisyu.github.io/2015/%E9%A2%84%E5%A4%87%E5%BC%80%E5%A7%8B%EF%BC%8C%E9%A6%96%E5%85%88%E5%90%90%E6%A7%BD/</guid>
-      </item>
-    
-      <item>
-        <title>Linkedlist V1_c++</title>
-        
-        
-          <description>&lt;p&gt;linkedlist_v1 file @ &lt;a href=&quot;https://github.com/KrisYu/DataStructure&quot;&gt;https://github.com/KrisYu/DataStructure&lt;/a&gt;&lt;/p&gt;
-</description>
-        
-        <pubDate>Fri, 04 Sep 2015 00:00:00 -0500</pubDate>
-        <link>http://krisyu.github.io/2015/LinkedList-v1_C++/</link>
-        <guid isPermaLink="true">http://krisyu.github.io/2015/LinkedList-v1_C++/</guid>
-      </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>News 'n' Updates | Jekyll Minimal Theme</title>
+  <link href="http://localhost:4000/feed.xml" rel="self"/>
+  <link href="http://localhost:4000/"/>
+  <updated>2016-12-15T14:23:53-06:00</updated>
+  <id>http://localhost:4000/</id>
+  <author>
+    <name>Jekyll Minimal Theme Team</name>
+  </author>
+  <generator>Jekyll v3.3.1</generator>
+
+  
+  <entry>
+    <title>Welcome to jekyll-minimal-theme - Another Minimal Jekyll Theme</title>
+    <link href="http://localhost:4000/welcome.html"/>
+    <updated>2015-01-31T00:00:00-06:00</updated>
+    <id>http://localhost:4000/welcome</id>
+    <content type="html">&lt;p&gt;What’s &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-minimal-theme&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;It’s another minimal(istic) Jekyll static site generator theme,
+that is, a ready-to-fork template pack. For example:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── _config.yml                               # site configuration
+├── _posts                                    # sample blog posts
+|   ├── 2014-05-05-sportdb-update-v192.md     #   filename format:
+|   ├── 2014-10-10-new-repo-baviria-bayern.md #    =&amp;gt; YEAR-MONTH-DAY-TITLE.MARKUP
+|   ├── 2014-10-21-sql-views.md
+|   ├── 2014-11-11-new-reop-maps.md
+|   └── 2014-12-15-quick-starter-datafiles.md
+├── _layouts                           
+|   ├── default.html                   # master layout template
+|   └── post.html                      # single blog post template
+├── css                               
+|   ├── _settings.scss                 # style settings (e.g. variables)
+|   └── style.scss                     # master style page
+├── feed.xml                           # web feed template (e.g. in atom format)
+├── archive.html                       # archive template
+└── index.html                         # index template
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;will result in (with &lt;code class=&quot;highlighter-rouge&quot;&gt;permalink: /:title.html&lt;/code&gt;):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;└── _site                                # output build folder; site gets generated here
+    ├── css
+    |   └── style.css                    # styles for pages (copied 1:1 as is)
+    ├── sportdb-update-v192.html         # blog post page
+    ├── new-repo-baviria-bayern.html     # another blog post page
+    ├── sql-views.html                   #  &quot;&quot;
+    ├── new-repo-maps.html               #  &quot;&quot;
+    ├── quick-starter-datafiles.html     #  &quot;&quot;
+    ├── feed.xml                         # web feed (e.g. in atom format)
+    ├── archive.html                     # archive page
+    └── index.html                       # index page
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To use - delete all sample posts in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; folder and
+change the settings in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; to use your own &lt;code class=&quot;highlighter-rouge&quot;&gt;site.title&lt;/code&gt;
+and &lt;code class=&quot;highlighter-rouge&quot;&gt;site.url&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;title:   'Jekyll Minimal Theme'
+url:     'http://drjekyllthemes.github.io/jekyll-minimal-theme'
+author:
+  name:  'Jekyll Minimal Theme Team'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>Added football.db Quick Starter Datafile Templates - $ sportdb new worldcup</title>
+    <link href="http://localhost:4000/quick-starter-datafiles.html"/>
+    <updated>2014-12-15T00:00:00-06:00</updated>
+    <id>http://localhost:4000/quick-starter-datafiles</id>
+    <content type="html">&lt;p&gt;The sportdb command line tool now includes a new quick starter
+template command to (auto-)download Datafile scripts from the new
+&lt;a href=&quot;https://github.com/openfootball/datafile&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;openfootball/datafile&lt;/code&gt; registry&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example, to build yourself a copy of the &lt;code class=&quot;highlighter-rouge&quot;&gt;worldcup2014.db&lt;/code&gt; type:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ sportdb new worldcup2014 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The new command will run these steps:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Step 1: Download &lt;code class=&quot;highlighter-rouge&quot;&gt;worldcup2014.rb&lt;/code&gt; Datafile (from GitHub) to your 
+  working folder as &lt;code class=&quot;highlighter-rouge&quot;&gt;./Datafile&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Step 2: Run the &lt;code class=&quot;highlighter-rouge&quot;&gt;sportdb&lt;/code&gt; build command
+    &lt;ul&gt;
+      &lt;li&gt;Step 2.a: Download all datasets listed in the Datafile as zip 
+ archives (from GitHub) to &lt;code class=&quot;highlighter-rouge&quot;&gt;./tmp&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Step 2.b: Create the “empty” database, that is, table structure, 
+ indexes, etc. (schema)&lt;/li&gt;
+      &lt;li&gt;Step 2.c: Read in all datasets from the zip archives in &lt;code class=&quot;highlighter-rouge&quot;&gt;./tmp&lt;/code&gt; (no need to unpack)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s it. All done and setup with a single command. Still early and rough.&lt;/p&gt;
+
+&lt;p&gt;PS: The first quick starter Datafile templates include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;worldcup&lt;/code&gt;   =&amp;gt; All World Cups 1930-2014&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;en&lt;/code&gt;         =&amp;gt; English Premier Leagues&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;en2014-15&lt;/code&gt;  =&amp;gt; English Premier League 2014/15&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cl2014-15&lt;/code&gt;  =&amp;gt; (European) Champions League 2014/15&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>New Repo /maps - Free Full-Screen Interactive Beer Maps w/ Brewery Listings</title>
+    <link href="http://localhost:4000/new-repo-maps.html"/>
+    <updated>2014-11-11T00:00:00-06:00</updated>
+    <id>http://localhost:4000/new-repo-maps</id>
+    <content type="html">&lt;p&gt;Added a new repo, that is, &lt;code class=&quot;highlighter-rouge&quot;&gt;/maps&lt;/code&gt; for hosting ‘full-screen’
+interactive beer maps with brewery listings.&lt;/p&gt;
+
+&lt;p&gt;See an example &lt;a href=&quot;http://openbeer.github.io/maps/at&quot;&gt;beer map for Austria&lt;/a&gt; (~200 breweries n brewpubs)
+live or &lt;a href=&quot;https://github.com/openbeer/maps&quot;&gt;check the source using&lt;/a&gt; the mapbox.js mapping library.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>football.db SQL Queries Made Easy (Thanks to Views)</title>
+    <link href="http://localhost:4000/sql-views.html"/>
+    <updated>2014-10-21T00:00:00-05:00</updated>
+    <id>http://localhost:4000/sql-views</id>
+    <content type="html">&lt;p&gt;First thanks to Joe Kampschmidt for getting started w/
+some &lt;a href=&quot;http://openfootball.github.io/docs/sql-queries-intro.html&quot;&gt;SQL queries examples&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Added some SQL views to make it easier to query the &lt;code class=&quot;highlighter-rouge&quot;&gt;football.db&lt;/code&gt;.
+Example - List World Cup Brazil 2014 Games:&lt;/p&gt;
+
+&lt;p&gt;Before (Table Edition):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT t1.title, 
+       t2.title, 
+       g.* 
+  FROM games g 
+       LEFT OUTER JOIN teams t1 ON t1.id = g.team1_id 
+       LEFT OUTER JOIN teams t2 ON t2.id = g.team2_id 
+       INNER JOIN rounds r ON r.id = g.round_id 
+       INNER JOIN events e ON e.id = r.event_id 
+ WHERE e.key = 'world.2014' 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;After (View Edition):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * 
+  FROM events_games_list 
+ WHERE e.key = 'world.2014'; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/openfootball/schema.sql&quot;&gt;More views&lt;/a&gt; include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;teams_list&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;games_list&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;events_list&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;events_teams_list&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;events_games_list&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;events_rounds_list&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;events_groups_list&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>New Repo - Bayern (Baviria) - incl. European Beer Stars 2011, 2012, 2013</title>
+    <link href="http://localhost:4000/new-repo-baviria-bayern.html"/>
+    <updated>2014-10-14T00:00:00-05:00</updated>
+    <id>http://localhost:4000/new-repo-baviria-bayern</id>
+    <content type="html">&lt;p&gt;Moved all beer, brewpub n brewery data for Bayern
+(Baviria) to its own repo, that is, &lt;a href=&quot;https://github.com/openbeer/by-bayern&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;openbeer/by-bayern&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Also includes all European Beer Star winners from Bayern
+(Baviria) for the years 2011, 2012 and 2013. Cheers. Prost.&lt;/p&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>sportdb Update v1.9.2 - Added Match Goals Reader e.g. [Messi 3', 45+1']</title>
+    <link href="http://localhost:4000/sportdb-update-v192.html"/>
+    <updated>2014-05-05T00:00:00-05:00</updated>
+    <id>http://localhost:4000/sportdb-update-v192</id>
+    <content type="html">&lt;p&gt;What’s news? sportdb command line updates:&lt;/p&gt;
+
+&lt;p&gt;The match schedule reader now will add goals (plus auto-add missing 
+players). All still a little rough but working without any (extra) configuration. Example:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(1) Thu Jun/12 17:00   Brazil 3-1 (1-1) Croatia       @ Arena de São Paulo, São Paulo
+        [Neymar 29', 71' (pen.) Oscar 90+1';  Marcelo 11' (o.g.)] 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The reader will add four goal records (see the table goals w/ fields such as 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;player_id&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;team_id&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;minute&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;offset&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;score1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;score2&lt;/code&gt; etc.):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1 |   Marcelo  11'   (o.g.)   1-0   Croatia (Team 2) 
+2 |   Neymar   29'            1-1   Brazil  (Team 1) 
+3 |   Neymar   71'   (pen.)   2-1   Brazil  (Team 1) 
+4 |   Oscar    90'+1'         3-1   Brazil  (Team 1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>Test Theme Styles</title>
+    <link href="http://localhost:4000/test-styles.html"/>
+    <updated>2014-04-01T00:00:00-05:00</updated>
+    <id>http://localhost:4000/test-styles</id>
+    <content type="html">&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
+
+&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading-3&quot;&gt;Heading 3&lt;/h3&gt;
+
+&lt;h4 id=&quot;heading-4&quot;&gt;Heading 4&lt;/h4&gt;
+
+&lt;h5 id=&quot;heading-5&quot;&gt;Heading 5&lt;/h5&gt;
+
+&lt;h6 id=&quot;heading-6&quot;&gt;Heading 6&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Strange Case of Dr Jekyll and Mr Hyde&lt;/strong&gt; is the original
+title of a novella written by the Scottish author Robert Louis Stevenson
+that was first published in 1886. The work is commonly known today as
+&lt;strong&gt;The Strange Case of Dr. Jekyll and Mr. Hyde&lt;/strong&gt;,
+&lt;strong&gt;Dr. Jekyll and Mr. Hyde&lt;/strong&gt;, or simply
+&lt;strong&gt;Jekyll &amp;amp; Hyde&lt;/strong&gt;.
+It is about a London lawyer named Gabriel John Utterson
+who investigates strange occurrences between
+his old friend, Dr. Henry Jekyll, and the evil Edward Hyde.&lt;/p&gt;
+
+&lt;p&gt;The work is commonly associated with the rare mental condition often called
+“split personality”, referred to in psychiatry as dissociative identity disorder,
+where within the same body there exists more than one distinct personality.
+In this case, there are two personalities within Dr Jekyll, one apparently good
+and the other evil. The novella’s impact is such that it has become a part of
+the language, with the very phrase “Jekyll and Hyde” coming to mean a person
+who is vastly different in moral character from one situation to the next.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Inspiration and writing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Robert Louis Stevenson Stevenson had long been intrigued by the idea…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Plot&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;John Utterson, a lawyer, is on his weekly walk with his relative…&lt;/p&gt;
+
+&lt;h3 id=&quot;lists&quot;&gt;Lists&lt;/h3&gt;
+
+&lt;p&gt;Table of Contents:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Inspiration and writing&lt;/li&gt;
+  &lt;li&gt;Plot&lt;/li&gt;
+  &lt;li&gt;Characters
+    &lt;ol&gt;
+      &lt;li&gt;Dr. Henry Jekyll/Edward Hyde&lt;/li&gt;
+      &lt;li&gt;Gabriel John Utterson&lt;/li&gt;
+      &lt;li&gt;Richard Enfield&lt;/li&gt;
+      &lt;li&gt;Dr. Hastie Lanyon&lt;/li&gt;
+      &lt;li&gt;Mr. Poole&lt;/li&gt;
+      &lt;li&gt;Inspector Newcomen&lt;/li&gt;
+      &lt;li&gt;Sir Danvers Carew, MP&lt;/li&gt;
+      &lt;li&gt;Maid&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Analysis&lt;/li&gt;
+  &lt;li&gt;Reception&lt;/li&gt;
+  &lt;li&gt;Adaptations&lt;/li&gt;
+  &lt;li&gt;References&lt;/li&gt;
+  &lt;li&gt;Further reading&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Categories:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Short stories by Robert Louis Stevenson&lt;/li&gt;
+  &lt;li&gt;1886 short stories&lt;/li&gt;
+  &lt;li&gt;Novellas&lt;/li&gt;
+  &lt;li&gt;Novels set in London&lt;/li&gt;
+  &lt;li&gt;Gothic novels&lt;/li&gt;
+  &lt;li&gt;Victorian novels&lt;/li&gt;
+  &lt;li&gt;Works based on the Faust legend&lt;/li&gt;
+  &lt;li&gt;Dissociative identity disorder in fiction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Robert Louis Stevenson:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Books
+    &lt;ul&gt;
+      &lt;li&gt;An Inland Voyage (1878)&lt;/li&gt;
+      &lt;li&gt;Travels with a Donkey in the Cévennes (1879)&lt;/li&gt;
+      &lt;li&gt;The Silverado Squatters (1883)&lt;/li&gt;
+      &lt;li&gt;Memories and Portraits (1887)&lt;/li&gt;
+      &lt;li&gt;Across the Plains (1892)&lt;/li&gt;
+      &lt;li&gt;Eight Years of Trouble in Samoa (1892)&lt;/li&gt;
+      &lt;li&gt;The Amateur Emigrant (1895)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Novels
+    &lt;ul&gt;
+      &lt;li&gt;Treasure Island (1883)&lt;/li&gt;
+      &lt;li&gt;Prince Otto (1885)&lt;/li&gt;
+      &lt;li&gt;Kidnapped (1886)&lt;/li&gt;
+      &lt;li&gt;The Black Arrow: A Tale of the Two Roses (1888)&lt;/li&gt;
+      &lt;li&gt;The Master of Ballantrae (1889)&lt;/li&gt;
+      &lt;li&gt;The Wrong Box (1889)&lt;/li&gt;
+      &lt;li&gt;The Wrecker (1892)&lt;/li&gt;
+      &lt;li&gt;Catriona (1893)&lt;/li&gt;
+      &lt;li&gt;The Ebb-Tide (1894)&lt;/li&gt;
+      &lt;li&gt;Weir of Hermiston (1896)&lt;/li&gt;
+      &lt;li&gt;St. Ives (1897)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h3&gt;
+
+&lt;p&gt;Biographer Graham Balfour quoted Stevenson’s wife Fanny Stevenson:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In the small hours of one morning, […] I was awakened by cries of horror
+from Louis. Thinking he had a nightmare, I awakened him. He said angrily:
+“Why did you wake me? I was dreaming a fine bogey tale.”
+I had awakened him at the first transformation scene.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Quotes from “The Strange Case of Dr. Jekyll and Mr. Hyde”:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Quiet minds cannot be perplexed or frightened but go on in fortune
+or misfortune at their own private pace, like a clock during a thunderstorm.&lt;/p&gt;
+
+  &lt;p&gt;– Robert Louis Stevenson&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It is one thing to mortify curiosity, another to conquer it.&lt;/p&gt;
+
+  &lt;p&gt;– Robert Louis Stevenson&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If I am the chief of sinners, I am the chief of sufferers also.&lt;/p&gt;
+
+  &lt;p&gt;– Robert Louis Stevenson&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;tables&quot;&gt;Tables&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Author&lt;/td&gt;
+      &lt;td&gt;Robert Louis Stevenson&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Original title&lt;/td&gt;
+      &lt;td&gt;Strange Case Of Dr Jekyll And Mr Hyde&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Country&lt;/td&gt;
+      &lt;td&gt;United Kingdom&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Language&lt;/td&gt;
+      &lt;td&gt;English&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Series&lt;/td&gt;
+      &lt;td&gt;None&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Genre&lt;/td&gt;
+      &lt;td&gt;Drama, Horror, Thriller, Gothic, Science fiction&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Publisher&lt;/td&gt;
+      &lt;td&gt;Longmans, Green &amp;amp; Co.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Publication date&lt;/td&gt;
+      &lt;td&gt;5 January 1886&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;code-n-code-blocks&quot;&gt;Code n Code Blocks&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;white-space&lt;/code&gt; CSS property is used to to describe
+how white spaces inside the element is handled. Example:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;white-space: normal
+white-space: nowrap
+white-space: pre
+white-space: pre-wrap
+white-space: pre-line
+
+white-space: inherit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Many CSS properties take &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;length&amp;gt;&lt;/code&gt; values,
+such as &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;margin&lt;/code&gt;,  &lt;code class=&quot;highlighter-rouge&quot;&gt;padding&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;font-size&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;border-width&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;text-shadow&lt;/code&gt;, …&lt;/p&gt;
+
+&lt;p&gt;Some specific examples:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1in&lt;/code&gt; is always &lt;code class=&quot;highlighter-rouge&quot;&gt;96px&lt;/code&gt;,&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;3pt&lt;/code&gt; is always &lt;code class=&quot;highlighter-rouge&quot;&gt;4px&lt;/code&gt;,&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;25.4mm&lt;/code&gt; is always &lt;code class=&quot;highlighter-rouge&quot;&gt;96px&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;html { font-size: 62.5%; } 
+body { font-size: 1.4rem; } /* =14px */
+h1   { font-size: 2.4rem; } /* =24px */
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</content>
+  </entry>
+  
+</feed>

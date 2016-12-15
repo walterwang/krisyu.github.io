@@ -1,42 +1,32 @@
-name: Xue Yu's notes
-description: Some Notes Here
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+###########
+# site.title, site.url, site.author.name
 
-aboutPage: true
+title:   'Jekyll Minimal Theme'
+author:
+  name:  'Jekyll Minimal Theme Team'
 
-markdown: redcarpet
-highlighter: pygments
+## note: 
+#  use site.path in your templates to make it work for both protocols e.g. http and https
+#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
+path: /jekyll-minimal-theme  
+url:  'http://henrythemes.github.io/jekyll-minimal-theme'
 
-paginate: 20
-baseurl: /
-domain_name: 'http://krisyu.github.io'
-google_analytics: 'UA-XXXXXXXX-X'
-disqus: false
-disqus_shortname: 'your-disqus-shortname'
 
-# Details for the RSS feed generator
-url:            'http://krisyu.github.io'
-author:         'Xue Yu (Kris)'
-authorTwitter:  'https://twitter.com/yuxue1989'
+########
+# more settings
 
-permalink:       /:year/:title/
+markdown: kramdown
 
-defaults:
-    -
-        scope:
-            path: "" # empty string for all files
-            type: pages
-        values:
-            layout: default
-    -
-        scope:
-            path: "" # empty string for all files
-            type: posts
-        values:
-            layout: post
-    -
-        scope:
-            path: ""
-            type: drafts
-        values:
-            layout: post
+sass:
+  sass_dir: css
+  style:    expanded
+
+permalink: /:title.html
+
+exclude:
+- README.md
+
+
+safe: true
+lsi: false
+
