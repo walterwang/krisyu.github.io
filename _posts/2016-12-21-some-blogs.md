@@ -28,7 +28,7 @@ title: "一些博客"
 
 <http://tinasu.farbox.com/post/2015/ni-ke-neng-zui-xiang-zhi-dao-de-guan-yu-wo-de-qi-ge-qing-dan#>
 
-弄的我也想把当年的博客文章给恢复到某处了，不过可能也是感慨时光飞逝||
+弄的我也想把当年的博客文章给恢复到某处了，不过可能也是感慨时光飞逝😓
 
 from 期待写出干货的我
 
