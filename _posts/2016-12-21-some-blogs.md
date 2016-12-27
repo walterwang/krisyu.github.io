@@ -21,6 +21,7 @@ title: "一些博客"
 - <http://zh.lucida.me/blog/on-learning-algorithms/>
 - <http://lwn.me/lab/>
 - <http://soyaine.cn/JavaScript30/>
+- http://egrcc.github.io/2015/04/12/mango-tutorial/
 
 
 
