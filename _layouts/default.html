@@ -1,29 +1,33 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
-   <title>{{ page.title }} - {{ site.title }}</title>
-   <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/style.css" >
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:900|Work+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+  {% seo %}
 </head>
-<body>
+<body style="background-color: rgb(255, 255, 255)">
+ <script src="{{site.baseurl}}/js/theme.min.js"></script>
+  <header>
+      <a href="{{site.baseurl}}/"><div class="home"></div></a>
+  </header>
 
-<div class="container">
-<header class="masthead">
-   <h3 class="masthead-title">
-     <a href="{{ site.path }}">{{ site.title }}</a>
-     <small>
-        &nbsp;&nbsp;&nbsp;<a href="{{ site.path }}/archive.html">Archive</a>
-     </small>
-     <small>
-       &nbsp;&nbsp;&nbsp;<a href="{{ site.path }}/about/index.html">About</a>
-     </small>
-   </h3>
-</header>
-
-<div id="content">
   {{ content }}
-</div>
 
-</div><!-- .container -->
+<footer>
+
+    <div class="links">
+        <a href="{{site.baseurl}}/about/">About</a>
+        <a href="{{site.baseurl}}/contact/">Contact</a>
+    </div>
+    <div class="theme" onclick="theme()" style="    background-image: url({{site.baseurl}}/images/theme.svg)"></div>
+</footer>
+{% include analytics.html %}
+
 </body>
 </html>
