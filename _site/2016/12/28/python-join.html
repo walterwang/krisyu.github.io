@@ -1,0 +1,25 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Python join: why string.join(list) instead of list.join(string)? - KrisYu's Playground!</title><link href="https://fonts.googleapis.com/css?family=Lato:900|Work+Sans" rel="stylesheet"><link rel="stylesheet" href="http://krisyu.github.io//css/main.css"><title>Python join: why string.join(list) instead of list.join(string)? - KrisYu’s Playground!</title><meta property="og:title" content="Python join: why string.join(list) instead of list.join(string)?" /><meta name="description" content="这里有个问题很有意思：" /><meta property="og:description" content="这里有个问题很有意思：" /><link rel="canonical" href="http://localhost:4000/http://krisyu.github.io//2016/12/28/python-join.html" /><meta property="og:url" content="http://localhost:4000/http://krisyu.github.io//2016/12/28/python-join.html" /><meta property="og:site_name" content="KrisYu’s Playground!" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2016-12-28T00:00:00-06:00" /><script type="application/ld+json"> {"@context": "http://schema.org", "@type": "BlogPosting", "headline": "Python join: why string.join(list) instead of list.join(string)?", "datePublished": "2016-12-28T00:00:00-06:00", "description": "这里有个问题很有意思：", "url": "http://localhost:4000/http://krisyu.github.io//2016/12/28/python-join.html"}</script></head><body style="background-color: rgb(255, 255, 255)"><script src="http://krisyu.github.io//js/theme.min.js"></script><header> <a href="http://krisyu.github.io//"><div class="home"></div></a></header><h1 class="post-headline">Python join: why string.join(list) instead of list.join(string)?</h1><div class="meta"><span>December 28, 2016</span></div><p>这里有个问题很有意思：</p><p><a href="http://stackoverflow.com/questions/493819/python-join-why-is-it-string-joinlist-instead-of-list-joinstring">Python join: why is it string.join(list) instead of list.join(string)?</a></p><p>This has always confused me. It seems like this would be nicer:</p><div class="highlighter-rouge"><pre class="highlight"><code>my_list = ["Hello", "world"]
+print my_list.join("-")
+# Produce: "Hello-world"
+</code></pre></div><p>Than this:</p><div class="highlighter-rouge"><pre class="highlight"><code>my_list = ["Hello", "world"]
+print "-".join(my_list)
+# Produce: "Hello-world"
+</code></pre></div><p>因为最近正好在看js的语法，js里面是这样做的：</p><div class="highlighter-rouge"><pre class="highlight"><code>var mack = [];
+mack.push('Mack');
+→ 1
+mack.push('the', 'Knife');
+→ 3
+console.log(mack);
+→ ["Mack", "the", "Knife"]
+console.log(mack.join(" "));
+→ Mack the Knife
+console.log(pop());
+→ Knife
+console.log(mack);
+→ ["Mack", "the"]
+
+</code></pre></div><p>但是python里面是这样做的：</p><div class="highlighter-rouge"><pre class="highlight"><code>mack = []
+mack.append('Mack')
+mack.extend(['the','Knife'])
+print ' '.join(mack)
+</code></pre></div><p>原因最高票已经解答：</p><blockquote><p>It’s because any iterable can be joined, not just lists, but the result and the “joiner” are always strings.</p></blockquote><p>因为只要是iterable的都可以join，join的结果则是string. join是string的method. 而js里面的join 谷歌一下是 Array.prototype.join(), 所以它是算Array的方法?</p><div id="disqus_thread"></div><script defer> (function() { var d = document, s = d.createElement('script'); s.src = '//webjeda-demo.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })();</script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><footer><div class="links"> <a href="http://krisyu.github.io//about/">About</a> <a href="http://krisyu.github.io//contact/">Contact</a></div><div class="theme" onclick="theme()" style=" background-image: url(http://krisyu.github.io//images/theme.svg)"></div></footer><script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-83979019-1', 'auto'); ga('send', 'pageview');</script></body></html>
