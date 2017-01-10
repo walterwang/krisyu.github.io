@@ -41,7 +41,7 @@ Stopwatch.prototype.start = function(){
 }
 ```
 
-更不用说配合上node.js那些传说中的工厂模式啥的了，我要晕|||，还是先搞vanilla Javascript.
+更不用说配合上node.js那些传说中的工厂模式啥的了，我要晕|，还是先搞vanilla Javascript.
 
 
 ### 参差不齐
