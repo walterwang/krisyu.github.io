@@ -76,9 +76,7 @@ take in了这几个参数：
 
 记录感觉就要用storage。
 
-然后在我毁掉原本的代码之前，原本抄的和小改写的在此处：
-
-<https://github.com/KrisYu/21DaysofFunwithJS/commit/35ce565dd3dd02fde6d584b5434ec5677f56bf6e>
+然后在我毁掉原本的代码之前，原本抄的和小改写的在[此处](https://github.com/KrisYu/21DaysofFunwithJS/commit/35ce565dd3dd02fde6d584b5434ec5677f56bf6e)
 
 
 修改后有待美化和更新的代码
