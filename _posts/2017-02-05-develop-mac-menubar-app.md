@@ -17,7 +17,7 @@ mac, swift, menubar, status bar, tutorial, bash, Terminal
 
 继续Next，然后选一个地方来存储你的app.
 
-![](../images/menubar/01.png)
+![]({{site.baseurl}}/images/menubar/01.png)
 
 
 
@@ -37,7 +37,7 @@ let statusItem = NSStatusBar.system().statusItem(withLength: NSSquareStatusItemL
 到 Assets.xcassets 中，把自己喜欢的图片（最好32*32px png）拖拽到asset中。选中这张图片，更改名字为'StatusBarButtonImage'，切换到attribute，然后记得选中device Mac，Render As选中Template Image.
 
 
-![](../images/menubar/02.png)
+![]({{site.baseurl}}/images/menubar/02.png)
 
 现在回到AppDelegate.swift中，
 
@@ -61,15 +61,15 @@ func applicationDidFinishLaunching(_ aNotification: Notification) {
 
 添加一个新key `Application is agent`,并将它的值设为YES.
 
-![](../images/menubar/03.png)
+![]({{site.baseurl}}/images/menubar/03.png)
 
 然后 隐藏窗口做的是， 打开MainMenu.xib， 选中window， 把visiable at launch的勾给去掉.
 
-![](../images/menubar/04.png)
+![]({{site.baseurl}}/images/menubar/04.png)
 
 现在运行，我们就可以看到就 Menubar 这里出现图标了，并且没有窗口跳出来了
 
-![](../images/menubar/05.png)
+![]({{site.baseurl}}/images/menubar/05.png)
 
 虽然目前点击这个按钮还暂时没有任何作用。
 
@@ -177,7 +177,7 @@ func toggleHideDesktopFiles(sender: NSMenuItem) {
 这个时候 Run 起来，就可以看到程序的结果了。
 
 
-![](../images/menubar/06.png)
+![]({{site.baseurl}}/images/menubar/06.png)
 
 
 ### 最终の整理
