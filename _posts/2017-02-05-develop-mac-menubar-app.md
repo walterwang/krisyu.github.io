@@ -190,6 +190,8 @@ func toggleHideDesktopFiles(sender: NSMenuItem) {
 
 完整项目代码参见：
 
+<https://github.com/KrisYu/HideDesktopFiles>
+
 
 
 
