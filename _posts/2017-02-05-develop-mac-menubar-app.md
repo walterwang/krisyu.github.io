@@ -7,7 +7,7 @@ title: "用Swift开发一个macOS Menubar App"
 # 用Swift开发一个macOS Menubar App
 
 
-mac, swift, menubar, status bar, tutorial, bash, Terminal 
+keywords: Mac, macOS, Swift, Menubar, Status bar, Tutorial, Bash, Terminal 
 
 ### 开始
 
