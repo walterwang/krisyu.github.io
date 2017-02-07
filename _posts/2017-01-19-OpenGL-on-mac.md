@@ -5,7 +5,8 @@ title: "OpenGL Mac 配置"
 
 # OpenGL Mac配置
 
-靠谱Mac环境设置教程:
+
+### 靠谱Mac环境设置教程:
 
 
 [Installing GLFW & GLEW for OpenGL in Mac OS X El Capitan](https://www.youtube.com/watch?v=D3lIDsSIm6M)
@@ -25,7 +26,7 @@ title: "OpenGL Mac 配置"
 这样正式可以run起来
 
 
-测试GLFW
+### 测试GLFW
 
 >  It provides a simple API for creating windows, contexts and surfaces, receiving input and events
 
@@ -34,8 +35,16 @@ title: "OpenGL Mac 配置"
 
 
 
+### GLM
 
 
+glm也是必不可少的，相较而言，glm比较简答，直接下载zip的source code，解压缩，然后再去`Header Search Paths`中添加一下解压的文件夹，就可以用起来了
+
+
+
+如这篇
+
+<http://stackoverflow.com/questions/22924378/adding-glm-to-xcode-5-1-project>
 
 
 
