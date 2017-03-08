@@ -11,7 +11,7 @@ title: "UIImage Extension实现播放gif"
 
 读此篇文章有感 → [Swift 玩转gif](http://www.jianshu.com/p/b60a06bdb375)
 
-这篇文章在尝试理解大名鼎鼎的Kingfisher库，而且我只特别认真读了其中前半段|||
+这篇文章在尝试理解大名鼎鼎的Kingfisher库，而且我只读了其中前半段|||
 
 
 iOS 的 camera roll是不支持gif显示的。如果我们想加载gif，可选：
@@ -37,7 +37,7 @@ iOS 的 camera roll是不支持gif显示的。如果我们想加载gif，可选�
 4. 根据这个array来创建动画的UIImage
 
 
-文章的办法比较简单，呈现 gif as it is. 而 SwiftGif 可能会是会在显示方面有所优化（其实我不懂啊|||。
+文章的办法比较简单，呈现 gif as it is. 而 SwiftGif 可能会是会在显示方面有所优化（其实我不懂啊\|||。
 
 
 
