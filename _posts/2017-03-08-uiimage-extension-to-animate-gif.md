@@ -37,7 +37,7 @@ iOS 的 camera roll是不支持gif显示的。如果我们想加载gif，可选�
 4. 根据这个array来创建动画的UIImage
 
 
-文章的办法比较简单，呈现 gif as it is. 而 SwiftGif 可能会是会在显示方面有所优化（其实我不懂啊\|||。
+文章的办法比较简单，呈现 gif as it is. 而 SwiftGif 可能会是会在显示方面有所优化（其实我不懂啊\|\|\|。
 
 
 
@@ -56,4 +56,4 @@ iOS 的 camera roll是不支持gif显示的。如果我们想加载gif，可选�
 
 
 
-感觉也可以 marketing 一下啊 \|||
+感觉也可以 marketing 一下啊 \|\|\|
