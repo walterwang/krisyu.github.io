@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Apple simd/swift 来算矩阵 matrix"
+---
+
 # Apple simd 来算矩阵 matrix
 
 keywords： Swift, simd, vector, matrix, matrix multiply matrix, matrix multiply vector ...
