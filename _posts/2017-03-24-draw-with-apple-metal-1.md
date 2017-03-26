@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Draw with Apple Metal 1"
+title: "用Apple Metal画东西1"
 ---
 
-# Draw with Apple Metal 1
+# 用Apple Metal画东西1
 
+这一系列都是我没啥营养的读书笔记
 
 Metal 和 OpenGL 一样，也是算一个大的状态机吧（？，所以要画一个三角形也是非常麻烦，但是一旦知道怎么画了，模式也是一样的吧（||
 
