@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "用Apple Metal画东西1"
+title: "Apple Metal画东西1"
 ---
 
-# 用Apple Metal画东西1
+# Apple Metal画东西1
 
 这一系列都是我没啥营养的读书笔记
 

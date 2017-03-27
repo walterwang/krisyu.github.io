@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "用Apple Metal画东西3"
+title: "Apple Metal画东西3"
 ---
 
-# 用Apple Metal画东西3
+# Apple Metal画东西3
 
 
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "用Apple Metal画东西2"
+title: "Apple Metal画东西2"
 ---
 
-# 用Apple Metal画东西2
+# Apple Metal画东西2
 
 
 ### 清理Code
@@ -106,6 +106,11 @@ func registerShaders() {
         }
     }
 ```
+
+注意： 之所以我们需要将code清理成这样，是因为：
+
+> Metal Objects里面有transient 短暂的，和 non-transient 非短暂的（devices, queues, data buffers, textures, states and pipelines)，这种我们就可以创建一次然后用就行了，而transient的比如 command buffer 和 encoder，我们就需要create them with each draw call, 就像OpenGL 的 game loop一样吧，比如有些代码我们是一定扔到game loop里的。
+
 
 ### Shader
 
