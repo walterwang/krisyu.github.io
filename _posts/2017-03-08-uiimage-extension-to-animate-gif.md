@@ -52,8 +52,6 @@ iOS 的 camera roll是不支持gif显示的。如果我们想加载gif，可选�
 
 所以就模仿SwiftGif写了一个 extension,然后就可以直接用了
 
-[UIImage Extension to show Gif](https://github.com/KrisYu/SwiftExtensions/blob/master/GifExt.swift)
+[GifExt](https://github.com/KrisYu/GifExt)
 
-
-
-感觉也可以 marketing 一下啊 \|\|\|
+感觉也可以 marketing 一下啊 \|\|\|，不过市场已被占领，但是还是放着玩儿吧。
