@@ -3,8 +3,6 @@ layout: post
 title: "Swift中的@escaping"
 ---
 
-# Swift中的@escaping
-
 
 要理解@escaping，首先需要理解closure， 要理解closure，首先理解匿名函数。
  

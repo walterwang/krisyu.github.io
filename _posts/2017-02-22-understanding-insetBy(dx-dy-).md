@@ -3,7 +3,6 @@ layout: post
 title: "理解 insetBy(dx:dy:)"
 ---
 
-# 理解 insetBy(dx:dy:)
 
 首先 inset 的意思是嵌入，插入。
 

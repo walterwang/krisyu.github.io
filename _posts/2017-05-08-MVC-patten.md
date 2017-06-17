@@ -3,7 +3,6 @@ layout: post
 title: "MVC 梳理"
 ---
 
-# MVC 梳理
 
 看到了一个so回答的不错，这样来看mvc：
 

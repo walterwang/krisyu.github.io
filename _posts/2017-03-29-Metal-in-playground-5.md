@@ -4,7 +4,6 @@ title: "Metal in Playground 5"
 ---
 
 
-# Metal in playground 5
 
 
 ### load texture 

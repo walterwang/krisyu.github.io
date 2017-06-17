@@ -3,8 +3,6 @@ layout: post
 title: "把App发布到App Store以外的地方"
 ---
 
-# 把App发布到App Store以外的地方
-
 
 keywords: Mac App, macOS, Swift, Distribute, Developer
 

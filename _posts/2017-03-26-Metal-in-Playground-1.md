@@ -4,7 +4,6 @@ title: "Metal in Playground 1"
 ---
 
 
-# Metal in Playground 1
 
 把代码移到playground去，需要创建 for macOS 的 playground，然后 Shaders.metal 文件是放在 Resources里的，MathUtils 和 MetalView是放在Sources里面， 然后画就是在 Playground 生成的主文件里画。
 

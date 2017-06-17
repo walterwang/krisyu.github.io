@@ -3,7 +3,6 @@ layout: post
 title: "一个极简化播放视频的View"
 ---
 
-# 一个极简化播放视频的View
 
 原po在这里 [How to play video inside a UIView without controls, like a background/wallpaper?](http://stackoverflow.com/questions/35226532/how-to-play-video-inside-a-uiview-without-controls-like-a-background-wallpaper)
 

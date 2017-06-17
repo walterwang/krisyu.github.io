@@ -3,7 +3,6 @@ layout: post
 title: "玩Playground的几个点"
 ---
 
-# 玩Playground的几个点
 
  - playground 里面如果全局域用`guard let else { return }` 会报错，因为全局不建议用return，用`exit(1)` 就可以解决问题。
 

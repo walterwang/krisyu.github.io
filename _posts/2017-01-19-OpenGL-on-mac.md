@@ -3,7 +3,6 @@ layout: post
 title: "OpenGL Mac 配置"
 ---
 
-# OpenGL Mac配置
 
 
 ### 靠谱Mac环境设置教程:
@@ -44,13 +43,6 @@ glm也是必不可少的，相较而言，glm比较简答，直接下载zip的so
 如这篇
 
 <http://stackoverflow.com/questions/22924378/adding-glm-to-xcode-5-1-project>
-
-
-### AntTweakBar
-
-因为作业需要GUI，然后发现其官网上的方法行不通||||
-
-还好有万能的 brew install ，最后同样需要去 build phase 里面添加 libAntTweakBar.dylib.
 
 
 

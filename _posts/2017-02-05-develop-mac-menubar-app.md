@@ -4,7 +4,6 @@ title: "用Swift开发一个macOS Menubar App"
 ---
 
 
-# 用Swift开发一个macOS Menubar App
 
 
 keywords: Mac, macOS, Swift, Menubar, Status bar, Tutorial, Bash, Terminal 
@@ -191,11 +190,6 @@ func toggleHideDesktopFiles(sender: NSMenuItem) {
 完整项目代码参见：
 
 <https://github.com/KrisYu/HideDesktopFiles>
-
-
-
-
-
 
 
 

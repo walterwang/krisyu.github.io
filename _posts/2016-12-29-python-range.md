@@ -4,7 +4,7 @@ title: "做练习想开的"
 ---
 
 
-###Python range
+### Python range
 
 
 做js的练习，也算有所得，比如这个题，要求实现range(start, end, step)， step可选，再实现sum：

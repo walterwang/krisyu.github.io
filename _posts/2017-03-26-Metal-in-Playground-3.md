@@ -3,7 +3,6 @@ layout: post
 title: "Metal in Playground 3"
 ---
 
-# Metal in Playground 3
 
 
 ### Set up compute kernal

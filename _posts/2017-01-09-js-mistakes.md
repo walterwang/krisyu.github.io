@@ -3,7 +3,6 @@ layout: post
 title: "JS - 坑无处不在"
 ---
 
-# JS - 坑无处不在
 
 
 > 种一棵树的最好时机是二十年前，其次是现在。
@@ -50,8 +49,7 @@ Stopwatch.prototype.start = function(){
 
 而我此时也是真正认识到，这个写代码也真是搞创作啊。其实有的时候所想还真不是能找来改改就行。要从白纸写起，而我还在读的阶段，甚至都还没到模仿的阶段。
 
-> 熟读唐诗三百首,不会吟诗也会吟
-
+> 熟读唐诗三百首,不会写诗也会吟.<br />
 > 熟看代码三万行,不会写也会拼
 
 还想吐槽一下github上搜Github lan:javascript 出来一大堆node.js, angular.js,jquery混用。

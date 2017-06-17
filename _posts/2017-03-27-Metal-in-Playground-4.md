@@ -4,8 +4,6 @@ title: "Metal in Playground 4"
 ---
 
 
-# Metal in Playground 4
-
 
 ### smoothstep 函数
 

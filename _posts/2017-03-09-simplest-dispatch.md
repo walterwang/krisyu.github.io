@@ -3,7 +3,6 @@ layout: post
 title: "最简单的GCD"
 ---
 
-# 最简单的GCD
 
 对GCD非常印象深刻的一次是加载网络数据（还是本地文件？）到 tableView 中，然后可能文件有一定大小，运行不出结果。然后就一直debug，debug，debug，直到崩溃\|\|\|,直到稍等了一下，那才算是第一次认识GCD吧。
 

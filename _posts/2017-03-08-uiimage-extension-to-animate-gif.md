@@ -4,7 +4,6 @@ title: "UIImage Extension实现播放gif"
 ---
 
 
-#UIImage Extension实现播放gif
 
 大神写的库中取出一段代码都可以写成另一个库，大神回答的一个stackoverflow问题都可以引出一个库。
 

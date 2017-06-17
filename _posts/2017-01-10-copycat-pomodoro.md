@@ -3,7 +3,6 @@ layout: post
 title: "照着写了一个Pomodoro"
 ---
 
-# 照着写了一个Pomodoro
 
 原文在此：
 <https://www.gorkahernandez.com/blog/fcc-zipline-series-103-build-pomodoro-clock/>

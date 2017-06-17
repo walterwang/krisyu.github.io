@@ -3,7 +3,6 @@ layout: post
 title: "Metal in Playground 2"
 ---
 
-# Metal in Playground 2
 
 ### Index Buffer
 

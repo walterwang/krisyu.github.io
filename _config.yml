@@ -1,41 +1,13 @@
-### your site title here
+title: Kris's playground
+author: KrisYu
+description: Just have some fun here
+avatar: /images/avatar.png
 
-title: KrisYu's Playground!
-baseurl: http://krisyu.github.io/ # name of the repository
-email: yu_xue@me.com
-
-
-
-highlighter: rouge
+# Build Settings
 markdown: kramdown
-### exclude the instructions / write-up in the README.md
+# highlighter: rouge
 
-
-# Tracker
-analytics: UA-83979019-1
-
-# Comments
-disqus-shortname: webjeda-demo
-
-
-#optimization
-#compress.html
-compress_html:
-  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
-  
-
-sass:
- style: compressed
-
-exclude:
-- README.md
-
-
-gems: [jekyll-seo-tag, jekyll-paginate]
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+gems: [jekyll-paginate]

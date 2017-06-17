@@ -3,8 +3,6 @@ layout: post
 title: "Apple Metal画东西3"
 ---
 
-# Apple Metal画东西3
-
 
 
 

@@ -3,8 +3,6 @@ layout: post
 title: "Apple Metal画东西2"
 ---
 
-# Apple Metal画东西2
-
 
 ### 清理Code
 
