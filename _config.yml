@@ -11,3 +11,10 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/page:num/"
 gems: [jekyll-paginate]
+
+# comments
+disqus:
+  shortname: http-krisyu-github-io
+
+# Google Analytics
+google_analytics: UA-101189927-1
