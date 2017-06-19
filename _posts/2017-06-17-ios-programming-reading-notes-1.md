@@ -7,7 +7,7 @@ title: iOS编程基础读书笔记第一章
 
 说起来很高端，其实对象和消息就是`fido.bark()`， `fido`是对象，而我们向其发送的消息就是`.bark()`.说法可以是
 
-| send the bark message, with no parameters to fido
+> send the bark message, with no parameters to fido
 
 在Swift中，万物皆对象。我们先定义一下，对象指的是你可以向其发送消息的某个实体。
 
@@ -48,7 +48,7 @@ two = "hello" // compile error
 一般来说（除Utilities外）一个文件里面就放一个类或者结构，不过我也其实有见过放很多对象类型的。
 
 
-其它的一些topic也是一些比较常见的，比如作用域，生命周期，如何设计类型与API，这种都只能多看多联系吧。
+其它的一些topic也是一些比较常见的，比如作用域，生命周期，如何设计类型与API，这种都只能多看多练习吧。
 
 
 
