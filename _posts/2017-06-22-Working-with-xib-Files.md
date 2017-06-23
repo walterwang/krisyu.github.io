@@ -3,7 +3,6 @@ layout: post
 title: Working with xib Files
 ---
 
-# Working with .xib Files
 
 之前在GitHub上下了一个mac osx app repo，然后发现代码结构居然跟我想的不太一样，因为现在如果新建mac osx application，直接就会默认使用storyboard，然后会生成很多东西。
 
