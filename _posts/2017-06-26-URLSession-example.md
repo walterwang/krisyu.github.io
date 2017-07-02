@@ -13,7 +13,7 @@ title: URLSession example
 - url可以用URLComponents和URLQueryItem结合来看
 - 这个static参数最后一个pass in是一个 escaping 的 completionHandler
 - dump可以展示一个更好的print效果、
-- 也可以用中文搜索，可以看iTunes Search API的页面看更多定制和范湖
+- 也可以用中文搜索，可以看iTunes Search API的页面看更多定制
 
 <script src="https://gist.github.com/KrisYu/10764e91331b3ddd1dcab5efa1aa6d9d.js"></script>
 
