@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "init(coder:)到底是啥？"
+title: "init(coder:)错误到底为啥？"
 ---
 
 
@@ -31,7 +31,7 @@ required init?(coder aDecoder: NSCoder) {
 }
 ```
 
-SO上有很多解答：
+SO上有很多清楚的解答：
 
 [Fatal error: use of unimplemented initializer 'init(coder:)' for class](https://stackoverflow.com/questions/24036393/fatal-error-use-of-unimplemented-initializer-initcoder-for-class)
 
