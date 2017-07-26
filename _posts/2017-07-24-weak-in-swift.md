@@ -50,3 +50,7 @@ testRetainCycle() // nothing in console
 ```
 
 解决方案就是把其中一个声明为weak类型，比如 class Dog 里面写成 weak var cat，当然这是非常非常简单的例子，突然感觉到了一阵害怕，不知道以前自己是不是犯过这种错，在别人的代码里翻看了一下使用weak的例子，closure，突然一阵惊慌😱
+
+很快看到了一个例子：
+
+[doubly-linked list](https://github.com/raywenderlich/swift-algorithm-club/tree/master/Linked%20List) 里面使用weak
