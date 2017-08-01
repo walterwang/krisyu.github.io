@@ -55,7 +55,8 @@ numberWords.forEach{ print($0) }
 
 And we'll find those functions are related with each other, for example, `first(where)` used forEach.
 
-And those functions/usages are make Swift Python-similar.
+And those functions/usages can make Swift code shorter and more clearable.
 
 - [Sequence Protocol Introduction](https://developer.apple.com/documentation/swift/sequence)
 - [Sequence.swift](https://github.com/apple/swift/blob/master/stdlib/public/core/Sequence.swift)
+
