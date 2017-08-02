@@ -1,1 +1,6 @@
-This is repo my personal website, I used a theme [Xian](https://github.com/KrisYu/Xian) created by myself.
+Walter's blog: interesting and useful things about computer vision and tensorflow.
+
+
+
+
+Theme by: [Xian](https://github.com/KrisYu/Xian).

@@ -1,6 +1,6 @@
-title: Kris's playground
-author: KrisYu
-description: Just have some fun here
+title: Walter's Blog
+author: Walter Wang
+description: machine learning musings
 avatar: /images/avatar.png
 
 # Build Settings
@@ -14,7 +14,7 @@ gems: [jekyll-paginate]
 
 # comments
 disqus:
-  shortname: http-krisyu-github-io
+  shortname: http-walter-github-io
 
 # Google Analytics
-google_analytics: UA-101189927-1
+# google_analytics: UA-101189927-1
