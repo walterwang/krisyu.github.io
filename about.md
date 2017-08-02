@@ -3,8 +3,4 @@ layout: post
 title: About
 active: about
 ---
-
-- [√] 女
-- [√] 大龄(?)
-- [√] 爱折腾
-- [ ] …
+Recent Graduate of NYU. Interested in computer vision and automation, checkout [pybot](http://github.com/walterwang/pybot.git).  

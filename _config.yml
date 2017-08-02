@@ -13,8 +13,8 @@ paginate_path: "/page:num/"
 gems: [jekyll-paginate]
 
 # comments
-disqus:
-  shortname: http-walter-github-io
+# disqus:
+#  shortname: http-walter-github-io
 
 # Google Analytics
 # google_analytics: UA-101189927-1
